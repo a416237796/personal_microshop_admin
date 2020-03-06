@@ -95,7 +95,7 @@
         <template slot-scope="scope">
           <el-image
             style="width: 100px; height: 100px"
-            :src="scope.row.image"
+            :src="scope.row.image[0].url"
             fit="scale-down">
             <div slot="error" :style="imgSlot">
               <d2-icon name="picture-o"></d2-icon>

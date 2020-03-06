@@ -1,2 +1,2 @@
-# personal_microshop_admin
-基于d2admin开发的个人微店后台管理系统前端页面
+### 开源
+基于 [d2admin](https://github.com/d2-projects/d2-admin) 框架开发，其他的懒得写

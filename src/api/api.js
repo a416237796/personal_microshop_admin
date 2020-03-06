@@ -1,0 +1,16 @@
+export const LOGIN_API = '/server/login' // 登录
+export const CHANGE_PWD = '/server/changePwd' // 修改密码
+export const LOGOUT = '/server/logout' // 注销退出
+export const GET_USER_INFO = '/server/getUserInfo' // 获取用户基本信息
+export const CLASSIFY_LIST = '/server/classifies' // 获取分类列表
+export const DELETE_CLASSIFY = '/server/deleteClassify' // 删除分类
+export const UPDATE_CLASSIFY = '/server/updateClassify' // 修改分类
+export const ADD_CLASSIFY = '/server/addClassify' // 添加分类
+
+export const GOODS_LIST = '/server/goodsList' // 商品列表
+export const GOODS_INFO = '/server/goods' // 通过id获取商品
+export const SAVE_GOODS = '/server/addGoods' // 保存商品
+export const UPDATE_GOODS = '/server/updateGoods' // 修改商品
+
+export const UPLOAD_IMAGE = '/server/upload' // 上传图片
+export const DELETE_IMAGE = '/server/deleteImg' // 删除图片

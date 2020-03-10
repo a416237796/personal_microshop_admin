@@ -14,3 +14,8 @@ export const UPDATE_GOODS = '/server/updateGoods' // 修改商品
 
 export const UPLOAD_IMAGE = '/server/upload' // 上传图片
 export const DELETE_IMAGE = '/server/deleteImg' // 删除图片
+
+export const SAVE_CAROUSEL = '/server/addCarousel' // 新增轮播图
+export const UPDATE_CAROUSEL = '/server/updateCarousel' // 修改轮播图
+export const DELETE_CAROUSEL = '/server/deleteCarousel' // 删除轮播图
+export const CAROUSEL_LIST = '/server/carousels' // 轮播图列表

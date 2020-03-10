@@ -13,19 +13,28 @@
           </el-radio>
         </el-radio-group>
       </el-form-item>
-      <el-form-item label="上架状态">
-        <el-radio
-          v-model="search.status"
-          v-for="({value, label}, index) in statusOption"
-          :key="`status${index}`"
-          :label="value">{{label}}
-          </el-radio>
-      </el-form-item>
+
       <el-form-item label="置顶状态">
         <el-radio
           v-model="search.is_top"
           v-for="({value, label}, index) in isTopOption"
           :key="`isTop${index}`"
+          :label="value">{{label}}
+          </el-radio>
+      </el-form-item>
+      <el-form-item label="删除状态">
+        <el-radio
+          v-model="search.is_delete"
+          v-for="({value, label}, index) in isDeleteOption"
+          :key="`isDelete${index}`"
+          :label="value">{{label}}
+          </el-radio>
+      </el-form-item>
+      <el-form-item label="上架状态">
+        <el-radio
+          v-model="search.status"
+          v-for="({value, label}, index) in statusOption"
+          :key="`status${index}`"
           :label="value">{{label}}
           </el-radio>
       </el-form-item>
@@ -60,16 +69,9 @@
           :picker-options="pickerOptions">
         </el-date-picker>
       </el-form-item>
-      <el-form-item label="删除状态">
-        <el-radio
-          v-model="search.is_delete"
-          v-for="({value, label}, index) in isDeleteOption"
-          :key="`isDelete${index}`"
-          :label="value">{{label}}
-          </el-radio>
-      </el-form-item>
+
       <el-form-item label="商品名称关键词">
-        <el-input v-model="search.name" class="name-input"></el-input>
+        <el-input v-model="search.name" class="name-input" placeholder="输入商品名称关键词查询"></el-input>
         <el-button type="primary" @click="onSubmit">查询</el-button>
       </el-form-item>
     </el-form>

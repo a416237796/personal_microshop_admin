@@ -69,6 +69,15 @@ const frameIn = [
         component: _import('Goods/Edit')
       },
       {
+        path: 'orders',
+        name: 'orders',
+        meta: {
+          title: '订单管理',
+          auth: true
+        },
+        component: _import('Orders')
+      },
+      {
         path: 'page3',
         name: 'page3',
         meta: {

@@ -19,3 +19,5 @@ export const SAVE_CAROUSEL = '/server/addCarousel' // 新增轮播图
 export const UPDATE_CAROUSEL = '/server/updateCarousel' // 修改轮播图
 export const DELETE_CAROUSEL = '/server/deleteCarousel' // 删除轮播图
 export const CAROUSEL_LIST = '/server/carousels' // 轮播图列表
+
+export const ORDERS_LIST = '/server/orders' // 订单列表

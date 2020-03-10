@@ -78,6 +78,15 @@ const frameIn = [
         component: _import('Orders')
       },
       {
+        path: 'print/:id',
+        name: 'print',
+        meta: {
+          title: '打印订单',
+          auth: true
+        },
+        component: _import('Orders/print')
+      },
+      {
         path: 'page3',
         name: 'page3',
         meta: {

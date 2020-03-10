@@ -13,6 +13,10 @@ import menuHeader from '@/menu/header'
 import menuAside from '@/menu/aside'
 import { frameInRoutes } from '@/router/routes'
 
+// 打印插件
+import Print from '@/plugin/print'
+Vue.use(Print) // 注册打印插件
+
 // 核心插件
 Vue.use(d2Admin)
 

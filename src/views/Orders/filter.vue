@@ -1,5 +1,5 @@
 <template>
-  <el-form label-position="left" :model="search" label-width="130px" size="medium">
+  <el-form class="filter-bar" label-position="left" :model="search" label-width="130px" size="medium">
     <el-form-item label="订单状态">
        <el-radio-group v-model="search.status">
          <el-radio v-for="(item, index) in status" :key="`status${index}`" :label="item.label">{{item.name}}</el-radio>
@@ -33,10 +33,10 @@
        <el-input v-model="search.nickname" style="max-width: 400px" placeholder="请输入买家昵称/姓名"></el-input>
     </el-form-item>
     <el-form-item label="订单编号/商品标题">
-       <el-input v-model="search.order" style="max-width: 400px" placeholder="请输入订单编号/商品标题"></el-input>
-    </el-form-item>
-    <el-form-item>
-      <el-button type="primary" @click="handleSearch">查询</el-button>
+       <el-col :span="24">
+         <el-input v-model="search.order" style="max-width: 400px" placeholder="请输入订单编号/商品标题"></el-input>
+         <el-button class="filter-bar-submit" type="primary" @click="handleSearch">查询</el-button>
+       </el-col>
     </el-form-item>
   </el-form>
 </template>
@@ -112,12 +112,19 @@ export default {
   },
   methods: {
     handleSearch () {
-      console.log(this.search)
+      this.$emit('search-orders', this.search)
     }
   }
 }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.filter-bar{
+  .el-form-item {
+    margin-bottom: 10px;
+  }
+  .filter-bar-submit {
+    margin-left: 10px;
+  }
+}
 </style>

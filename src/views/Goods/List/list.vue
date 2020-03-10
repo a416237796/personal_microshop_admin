@@ -69,7 +69,6 @@
           :picker-options="pickerOptions">
         </el-date-picker>
       </el-form-item>
-
       <el-form-item label="商品名称关键词">
         <el-input v-model="search.name" class="name-input" placeholder="输入商品名称关键词查询"></el-input>
         <el-button type="primary" @click="onSubmit">查询</el-button>
@@ -400,7 +399,7 @@ export default {
 }
 .name-input {
   margin-right: 10px;
-  width: 350px
+  max-width: 350px
 }
 .list-pagination {
   margin: 20px 0;

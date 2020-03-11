@@ -21,3 +21,4 @@ export const DELETE_CAROUSEL = '/server/deleteCarousel' // 删除轮播图
 export const CAROUSEL_LIST = '/server/carousels' // 轮播图列表
 
 export const ORDERS_LIST = '/server/orders' // 订单列表
+export const ORDER_INFO = '/server/getOrderInfo' // 订单详情

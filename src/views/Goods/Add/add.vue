@@ -89,7 +89,7 @@
 import { uploadImg, deleteImg, saveGoods } from '@/api/goods'
 import { getClassifyList } from '@/api/classify'
 export default {
-  name: 'edit',
+  name: 'goods-add',
   created () {
     this.handleGetClassifyList()
   },

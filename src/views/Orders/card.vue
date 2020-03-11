@@ -16,7 +16,7 @@
               <div slot="error" class="image-slot">
                 <i class="el-icon-picture-outline"></i>
               </div>
-              </el-image>
+            </el-image>
           </el-col>
           <el-col :span="9">
             <el-link href="" :title="item.goods_name">{{item.goods_name}}</el-link>

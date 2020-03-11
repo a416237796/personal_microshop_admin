@@ -162,14 +162,14 @@ export default {
      * @param {Object} context
      * @param {Object} payload 从路由钩子的 to 对象上获取 { name, params, query, fullPath } 路由信息
      */
-    open ({ state, commit, dispatch }, { name, params, query, fullPath }) {
+    open ({ state, commit, dispatch }, { name, params, query, fullPath, path }) {
       return new Promise(async resolve => {
         // 已经打开的页面
         let opened = state.opened
         // 判断此页面是否已经打开 并且记录位置
         let pageOpendIndex = 0
         const pageOpend = opened.find((page, index) => {
-          const same = page.fullPath === fullPath
+          const same = page.name === name
           pageOpendIndex = same ? index : pageOpendIndex
           return same
         })

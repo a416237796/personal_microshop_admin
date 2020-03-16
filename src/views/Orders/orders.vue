@@ -13,6 +13,8 @@
       background
       layout="total, prev, pager, next"
       :total="total"
+      :page-size="pagination.page_size"
+      :current-page="pagination.page_num"
       @current-change="handleChangePage">
     </el-pagination>
   </d2-container>

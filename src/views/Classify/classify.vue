@@ -6,6 +6,7 @@
     </el-button>
     <el-table
       :data="list"
+      size="small"
       style="width: 100%">
       <el-table-column
         type="index"

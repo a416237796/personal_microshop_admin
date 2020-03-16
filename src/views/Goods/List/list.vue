@@ -75,8 +75,9 @@
       </el-form-item>
     </el-form>
     <el-table
-    :data="list"
-    style="width: 100%">
+      :data="list"
+      size="small"
+      style="width: 100%">
       <el-table-column
         type="index"
         width="50">
@@ -194,6 +195,7 @@
     </el-table>
     <el-pagination
       background
+      v-if="list.length > 0"
       class="list-pagination"
       layout="total, prev, pager, next"
       :page-size="searchData.page_size"

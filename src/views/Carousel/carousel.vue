@@ -6,6 +6,7 @@
     <CarouselEdit :show="showEdit" :data="data" @cancel="showEdit = false"></CarouselEdit>
     <el-table
       :data="list"
+      size="small"
       style="width: 100%">
        <el-table-column
         type="index"

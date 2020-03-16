@@ -20,17 +20,9 @@
       prop="avatar_url"
       label="头像">
       <template slot-scope="scope">
-        <el-avatar :size="60" :src="scope.row.avatar_url" @error="errorHandler">
+        <el-avatar :size="60" :src="scope.row.avatar_url" fit="scale-down">
           <img :src="avatarError"/>
         </el-avatar>
-        <el-image
-          style="width: 100px; height: 100px"
-          :src="scope.row.image[0].url"
-          fit="scale-down">
-          <div slot="error" :style="imgSlot">
-            <d2-icon name="picture-o"></d2-icon>
-          </div>
-        </el-image>
       </template>
     </el-table-column>
     <el-table-column

@@ -23,12 +23,19 @@
 <script>
 export default {
   name: 'user-filter',
+  props: {
+    form: {
+      type: Object,
+      default () {
+        return {
+          name: '',
+          created_at: ''
+        }
+      }
+    }
+  },
   data () {
     return {
-      form: {
-        name: '',
-        created_at: ''
-      },
       pickerOptions: {
         shortcuts: [{
           text: '最近一周',
@@ -60,7 +67,7 @@ export default {
   },
   methods: {
     handleSearch () {
-      console.log(this.form)
+      this.$emit('search-user', this.form)
     }
   }
 }

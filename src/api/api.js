@@ -24,3 +24,6 @@ export const ORDERS_LIST = '/server/orders' // 订单列表
 export const ORDER_INFO = '/server/getOrderInfo' // 订单详情
 
 export const USERS_LIST = '/server/userList' // 订单详情
+
+export const SHOP_INFO = '/server/shopInfo' // 店铺信息
+export const SAVE_SHOP_INFO = '/server/changeShop' // 保存店铺信息

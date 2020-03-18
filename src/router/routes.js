@@ -96,13 +96,13 @@ const frameIn = [
         component: _import('Users')
       },
       {
-        path: 'page3',
-        name: 'page3',
+        path: 'shop',
+        name: 'shop',
         meta: {
-          title: '页面 3',
+          title: '店铺管理',
           auth: true
         },
-        component: _import('demo/page3')
+        component: _import('Shop')
       },
       // 系统 前端日志
       {
